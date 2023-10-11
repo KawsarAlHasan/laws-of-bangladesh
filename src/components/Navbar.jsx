@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import LOB from "../assets/laws-of-bangladesh.png"
-import { Link } from 'react-router-dom'
 
 function Navbar({onSearch}) {
     const [searchValue, setSearchValue] = useState('')
@@ -15,7 +14,7 @@ function Navbar({onSearch}) {
     }
 
     const search = <form className="form-control" onSubmit={handleSubmit}>
-    <input type="text" value={searchValue} onChange={handleSearchInput} placeholder="Search law..." className="input input-bordered input-sm w-full px-3 max-w-xs md:w-auto" />
+    <input type="text" value={searchValue} onChange={handleSearchInput} placeholder="Search law..." className="input input-bordered input-sm w-full px-3 pl-6 max-w-xs md:w-auto" />
   </form>
 
   const navItems = <><li><a>HOME</a></li>
