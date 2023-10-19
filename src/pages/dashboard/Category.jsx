@@ -5,7 +5,7 @@ import Loading from '../../components/Loading';
 import { useNavigate } from "react-router-dom";
 
 function Category() {
-    document.title = 'Category || Laws of Bangladesh';
+    document.title = 'Grand Category || Laws of Bangladesh';
 
     const navigate = useNavigate();
 
@@ -76,7 +76,7 @@ function Category() {
         <h2 className='text-center text-4xl my-4'>Grand <span className='text-[red]'>Category</span></h2>
 
         <form className="mx-2" onSubmit={handleSubmit(onSubmit)}>
-        <input type="text" placeholder="Grand Category Name.." {...register("grandCategory", { required: "category is required" })} className="input input-bordered input-accent w-full max-w-xs" />
+        <input type="text" placeholder="Grand Category Name.." {...register("grandCategory", { required: "Grand category is required" })} className="input input-bordered input-accent w-full max-w-xs" />
         
             <input
               className="btn btn-primary"

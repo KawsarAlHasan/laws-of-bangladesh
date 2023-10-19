@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import AllLaws from "../components/AllLaws";
+import Banner from "../components/Banner";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      {/* <Banner /> */}
+      <AllLaws></AllLaws>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
